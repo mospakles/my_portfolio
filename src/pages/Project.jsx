@@ -36,7 +36,7 @@ const projects = [
       "A private application for all vetted bidders for trade and dispensing sensitive information",
     image: "/images/client.png",
     demoLink: "https://example.com/project2",
-    framework: "Next.js",
+    framework: "Angular",
     isNDA: true,
   },
   {
