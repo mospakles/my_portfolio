@@ -13,6 +13,9 @@ const skills = [
   "Material-UI",
   "Version Control",
   "Responsive Design",
+  "WordPress",
+  "Sanity",
+  "Shopify",
   // Add more skills as needed
 ];
 
@@ -23,7 +26,7 @@ const Skills = () => {
         <h2 className="text-xl md:text-3xl font-extrabold mb-10 p-5 border-2 border-dashed flex w-1/4 mx-auto">
           Tech Stacks
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
           {skills.map((skill, index) => (
             <div
               key={index}
