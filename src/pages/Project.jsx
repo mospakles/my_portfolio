@@ -125,7 +125,7 @@ const Projects = () => {
         {publicProjects.length > 0 && (
           <>
             <h3 className="text-xl font-bold mb-2 p-2">
-              <div className="flex items-center justify-center text-white">
+              <div className="flex items-center justify-center text-black dark:text-white dark:bg-black bg-white">
                 <BsUnlock className="mr-2" />
                 <p className="text-lg">Public Projects</p>
               </div>
