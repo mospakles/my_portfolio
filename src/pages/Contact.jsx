@@ -20,7 +20,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="h-screen w-full text-black dark:text-white dark:bg-black bg-white p-16">
+    <div className="h-screen w-full text-black dark:text-white dark:bg-black bg-gray-200 p-16">
       <div className="max-w-md mx-auto w-full bg-white p-8 rounded-lg shadow-lg">
         <h2 className="text-3xl font-extrabold text-gray-800 mb-6">
           Contact Me
@@ -38,7 +38,7 @@ const Contact = () => {
               id="name"
               name="name"
               required
-              className="w-full bg-gray-100 border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full bg-gray-100 border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-green-500"
               placeholder="Your Name"
             />
           </div>
@@ -54,7 +54,7 @@ const Contact = () => {
               id="email"
               name="email"
               required
-              className="w-full bg-gray-100 border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full bg-gray-100 border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-green-500"
               placeholder="Your Email"
             />
             <ValidationError

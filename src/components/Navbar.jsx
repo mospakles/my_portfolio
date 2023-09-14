@@ -48,7 +48,7 @@ const Navbar = () => {
             </button>
           </div>
 
-          <div className="hidden lg:flex lg:space-x-4">
+          <div className="hidden lg:flex lg:space-x-6">
             <NavLinkItem to="/" activeClassName="text-[#DA7B93]">
               Home
             </NavLinkItem>
@@ -73,15 +73,15 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="mt-4 space-x-6 lg:hidden">
+          <div className="mt-4 space-x-4 lg:hidden flex justify-between items-center">
             <NavLinkItem to="/" activeClassName="text-[#DA7B93]">
               Home
             </NavLinkItem>
             <NavLinkItem to="/about" activeClassName="text-[#DA7B93]">
-              About Me
+              About
             </NavLinkItem>
             <NavLinkItem to="/stack" activeClassName="text-[#DA7B93]">
-              Tech Stack
+              Stack
             </NavLinkItem>
             <NavLinkItem to="/project" activeClassName="text-[#DA7B93]">
               Projects
@@ -89,6 +89,9 @@ const Navbar = () => {
             <NavLinkItem to="/contact" activeClassName="text-[#DA7B93]">
               Contact
             </NavLinkItem>
+            <div className="justify-end ">
+              <Switcher />
+            </div>
           </div>
         )}
       </div>

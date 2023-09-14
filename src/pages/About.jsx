@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="h-full md:h-screen w-full text-black dark:text-white dark:bg-black bg-white">
+    <div className="h-full md:h-screen w-full text-black dark:text-white dark:bg-black bg-gray-200">
       <div className="flex flex-col md:flex-row justify-center items-center p-3">
         <img
           src="/images/pic.jpeg"

@@ -10,9 +10,9 @@ import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 
 const Home = () => {
   return (
-    <div className="h-screen w-full text-black dark:text-white dark:bg-black bg-white">
+    <div className="h-screen w-full text-black dark:text-white dark:bg-black bg-gray-300">
       <div className="p-10">
-        <h1 className="text-3xl md:text-5xl font-extrabold dark:text-[#faed26] p-6 uppercase text-center tracking-widest">
+        <h1 className="text-3xl md:text-5xl font-extrabold dark:text-[#faed26] p-6 uppercase text-center tracking-widest text-[#797327]">
           Motunrayo Odusina
         </h1>
         <h2 className="text-xl md:text-2xl font-semibold mb-6 uppercase text-center">
@@ -22,11 +22,10 @@ const Home = () => {
           A result-driven Frontend Developer with 2 years of experience in
           developing and maintaining complex web applications using various
           frontend technologies. Proficient in Nextjs, Angularjs, React, and
-          WordPress. Skilled in HTML, CSS, JavaScript, TypeScript, jQuery, and
-          Bootstrap.
+          WordPress. Skilled in HTML, CSS, JavaScript, TypeScript, jQuery, and Redux.
         </p>
-        <div className="w-full md:w-1/3 mx-auto text-center p-5 mb-6 uppercase text-2xl font-semibold border-2 border-dashed flex flex-col md:flex-row justify-around items-center">
-          <h1 className="mb-4 md:mb-0"> Have a look at my Resume</h1>
+        <div className="w-full md:w-1/3 mx-auto text-center p-5 mb-8 uppercase text-2xl font-semibold border-2 border-dashed border-s-8 flex flex-col md:flex-row justify-around items-center">
+          <h1 className="mb-6 md:mb-0"> Have a look at my Resume</h1>
           <a
             href="https://drive.google.com/file/d/1SSansWxp3skKHOWKDiqfs31wUjIQmGrQ/view?usp=drive_link"
             target="_blank"
