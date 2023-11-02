@@ -7,15 +7,15 @@ const skills = [
   "React",
   "Angular",
   "Next.js",
-  "CSS Frameworks",
+  "Tailwind",
   "TypeScript",
   "BootStrap",
   "Material-UI",
   "Version Control",
   "Responsive Design",
   "WordPress",
-  "Sanity",
-  "Shopify",
+  "Redux",
+  "GraphQL",
   // Add more skills as needed
 ];
 

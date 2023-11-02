@@ -8,26 +8,24 @@ const projects = [
     description:
       "A forex application majorly for businesses, for trading different currencies with other businesses",
     image: "/images/fxiq.png",
-    demoLink: "https://example.com/project1",
+    demoLink: "https://fxiq.ng/",
     framework: "React",
   },
   {
-    title: "Forex Exchange Admin Page",
+    title: "GranulaX Landing Page",
     description:
-      "An admin page that serves as the backend for the inputting real time exchange rates on a daily basis.",
-    image: "/images/admin.png",
-    demoLink: "https://example.com/project2",
+      "A landing page for granula X, a startup for tokenization for wealth creation",
+    image: "/images/granula.png",
+    demoLink: "https://granulax.com/",
     framework: "Next.js",
-    isNDA: true,
   },
   {
     title: "Marginal Fields Landing Page",
     description:
       "A bidding platform that allows designated set of people to bid for highly rated resources",
     image: "/images/marginal.png",
-    demoLink: "https://example.com/project2",
+    demoLink: "https://marginal-fields-v2-site.vercel.app/",
     framework: "Angular",
-    isNDA: true,
   },
   {
     title: "Forex Exchange Rate Project",
@@ -36,14 +34,6 @@ const projects = [
     image: "/images/exchange.png",
     demoLink: "https://fx-exchange-lob8wkr5k-fxexchange.vercel.app/",
     framework: "Next.js",
-  },
-  {
-    title: "Fxiq Landing Page",
-    description:
-      "A web application that provides a real-time exchange rate for all currencies",
-    image: "/images/fxiqlanding.png",
-    demoLink: "https://fxiq.ng/",
-    framework: "React",
   },
   {
     title: "Todo Application",
@@ -84,7 +74,7 @@ const Projects = () => {
             <h3 className="text-xl font-bold mb-2 p-2">
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-black dark:text-white dark:bg-black bg-gray-200">
-              {publicProjects.map((project, index) => (
+              {projects.map((project, index) => (
                 <div
                   key={index}
                   className="bg-white shadow-lg rounded-lg overflow-hidden border-2"
