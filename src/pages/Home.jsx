@@ -19,15 +19,17 @@ const Home = () => {
           Frontend Developer
         </h2>
         <p className="text-md md:text-lg text-center mb-8 mt-7 p-6 leading-loose w-full md:w-1/2 mx-auto">
-          A result-driven Frontend Developer with 2 years of experience in
-          developing and maintaining complex web applications using various
-          frontend technologies. Proficient in Nextjs, Angularjs, React, and
-          WordPress. Skilled in HTML, CSS, JavaScript, TypeScript, jQuery, and Redux.
+          Dedicated and skilled Frontend Developer with two years of hands-on
+          experience creating and implementing innovative web designs and user
+          experiences. Proficient in HTML, CSS, JavaScript, and modern frontend
+          frameworks. Adept at collaborating with cross-functional teams and
+          clients to drive project success. Proven track record of delivering
+          high-quality code on time and within budget.
         </p>
         <div className="w-full md:w-1/3 mx-auto text-center p-5 mb-8 uppercase text-2xl font-semibold border-2 border-dashed border-s-8 flex flex-col md:flex-row justify-around items-center">
           <h1 className="mb-6 md:mb-0"> Have a look at my Resume</h1>
           <a
-            href="https://drive.google.com/file/d/1SSansWxp3skKHOWKDiqfs31wUjIQmGrQ/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1YaHAA2THuryrnwBpenHN8HVTSnUe5tKs/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
