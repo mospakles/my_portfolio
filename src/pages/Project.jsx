@@ -1,46 +1,44 @@
 import React from "react";
-import { FiLock } from "react-icons/fi";
-import { BsUnlock } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Fxiq",
+    title: "iqPAY",
     description:
       "A forex application majorly for businesses, for trading different currencies with other businesses",
-    image: "/images/fxiq.png",
-    demoLink: "https://fxiq.ng/",
-    framework: "React",
+    image: "/images/iqpay.png",
+    demoLink: "https://iqpay-v2.vercel.app/",
+    framework: "Next.js",
   },
   {
     title: "GranulaX Landing Page",
     description:
       "A landing page for granula X, a startup for tokenization for wealth creation",
-    image: "/images/granula.png",
+    image: "/images/granulax.png",
     demoLink: "https://granulax.com/",
     framework: "Next.js",
   },
-  {
-    title: "Marginal Fields Landing Page",
-    description:
-      "A bidding platform that allows designated set of people to bid for highly rated resources",
-    image: "/images/marginal.png",
-    demoLink: "https://marginal-fields-v2-site.vercel.app/",
-    framework: "Angular",
-  },
-  {
-    title: "Forex Exchange Rate Project",
-    description:
-      "A web application that provides a real-time exchange rate for all currencies",
-    image: "/images/exchange.png",
-    demoLink: "https://fx-exchange-lob8wkr5k-fxexchange.vercel.app/",
-    framework: "Next.js",
-  },
+  // {
+  //   title: "Waist beads by Nora",
+  //   description: "An ecommerce page for selling waistbeads",
+  //   image: "/images/waistbead.png",
+  //   demoLink: "https://www.waistbeadsbynora.com/",
+  //   framework: "React",
+  // },
   {
     title: "Todo Application",
     description: "An application that helps you organize your tasks",
     image: "/images/todo.png",
     demoLink: "https://legendary-croissant-056f58.netlify.app/",
     framework: "Next.js",
+  },
+  {
+    title: "Weather Forecast App",
+    description:
+      "A local weather app that allows you to track the current and future weather of cities of your choosing.",
+    image: "/images/vue.png",
+    demoLink: "https://vueeweather.netlify.app/",
+    framework: "Vue Js",
   },
   {
     title: "Coworkstyle",
@@ -60,24 +58,40 @@ const projects = [
 ];
 
 const Projects = () => {
-  // const ndaProjects = projects.filter((project) => project.isNDA);
-  const publicProjects = projects.filter((project) => !project.isNDA);
-
   return (
-    <div className="h-full w-full p-10 text-black dark:text-white dark:bg-black bg-gray-200">
+    <motion.div
+      className="h-full w-full p-10 text-black dark:text-white dark:bg-black bg-gray-200"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-extrabold mb-2 p-3 text-center">
+        <motion.h2
+          className="text-3xl font-extrabold mb-2 p-3 text-center"
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+        >
           My Projects
-        </h2>
+        </motion.h2>
         {projects.length > 0 && (
           <>
-            <h3 className="text-xl font-bold mb-2 p-2">
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-black dark:text-white dark:bg-black bg-gray-200">
+            <h3 className="text-xl font-bold mb-2 p-2"></h3>
+            <motion.div
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-black dark:text-white dark:bg-black bg-gray-200"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+            >
               {projects.map((project, index) => (
-                <div
+                <motion.div
                   key={index}
                   className="bg-white shadow-lg rounded-lg overflow-hidden border-2"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2 * index, duration: 0.5 }}
+                  whileHover={{ scale: 1.05 }}
                 >
                   <img
                     src={project.image}
@@ -103,13 +117,13 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           </>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,20 +1,35 @@
 import React from "react";
+import { motion } from "framer-motion";
 // import myPic from "../images/pic.jpeg";
 
 const About = () => {
   return (
-    <div className="h-full md:h-screen w-full text-black dark:text-white dark:bg-black bg-gray-200">
+    <motion.div
+      className="h-full md:h-screen w-full text-black dark:text-white dark:bg-black bg-gray-200"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="flex flex-col md:flex-row justify-center items-center p-3">
-        <img
+        <motion.img
           src="/images/pic.jpeg"
           alt="about"
-          className="w-full md:w-1/2 h-[80vh] object-contain rounded-full"
+          className="w-full md:w-1/2 h-[80vh] oject-cover md:object-contain rounded-full"
+          initial={{ x: -200, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
         />
-        <div className="p-5 md:w-1/2">
+        <motion.div
+          className="p-5 md:w-1/2"
+          initial={{ x: 200, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+        >
           <h1 className="text-4xl font-bold mb-3">About Me</h1>
           <p className="mb-3">
             Hi there! I'm Mo, a frontend developer specializing in React,
-            Angular, and Next.js. With 2 years of experience, I excel at
+            Angular, Vue.js and Next.js. With 3 years of experience, I excel at
             creating visually appealing web applications that provide
             exceptional user experiences.
           </p>
@@ -26,10 +41,10 @@ const About = () => {
             timely project delivery.
           </p>
           <p className="mb-3">
-            My proficiency in React, Angular, and Next.js enables me to build
-            responsive, feature-rich applications that prioritize performance
-            and maintainability. I focus on component-based architecture, state
-            management, and seamless API integration.
+            My proficiency in React, Angular, Vue.js, and Next.js enables me to
+            build responsive, feature-rich applications that prioritize
+            performance and maintainability. I focus on component-based
+            architecture, state management, and seamless API integration.
           </p>
           <p className="mb-3">
             Driven by continuous learning, I stay up to date with the latest
@@ -52,13 +67,13 @@ const About = () => {
           </p>
           <h2 className="text-3xl font-bold mb-3">Objective</h2>
           <p>
-            To obtain a challenging role as an Intermediate Frontend Developer
-            where my technical skills and creativity will be utilized to develop
-            visually appealing and user-friendly web applications.
+            To obtain a challenging role as a Frontend Developer where my
+            technical skills and creativity will be utilized to develop visually
+            appealing and user-friendly web applications.
           </p>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

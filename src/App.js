@@ -9,7 +9,6 @@ import Home from './pages/Home';
 import Stack from './pages/Stack';
 import Project from './pages/Project';
 import Contact from './pages/Contact';
-import Switcher from './Hooks/Switcher';
 
 const App = () => {
   return (
